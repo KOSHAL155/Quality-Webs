@@ -1,0 +1,205 @@
+
+/*--------Navigation-------*/
+#navbar
+{
+   position: sticky;
+    top: 0;
+    z-index: 10;
+	
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li
+{
+    float: right;
+    text-align: left;
+}
+#navbar ul li a:hover
+{
+    color: #df0d0d!important;
+}
+.navbar
+{
+    background: rgb(0, 0, 0);
+}
+.navbar-toggler
+{background-color:#0b0f13;
+    border: none!important;
+}
+.nav-link
+{background-color:#007bff;
+    color: #555!important;
+    font-weight: 600;
+    font-size: 20px;
+}
+/*--------slider-----*/
+#slider
+{
+   
+    transition: 1s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   position: static;
+
+}
+tr,td,table{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+.carousel-caption
+{
+    top: 50%;
+    width: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption h5
+{
+    width: 50%;
+    color: rgb(167, 27, 27);
+    font-size: 50px;
+}
+
+/*------about-------*/
+#about
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #555;
+}
+#about.btn
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about content
+{
+    padding-top: 70px;
+}
+.b
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.h5
+{
+    
+
+    font-weight: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------Get in touch----------*/
+#contact
+{
+    background-color: #efefef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #777;
+}
+.contact-form 
+{
+    padding: 15px;
+}
+.form-control
+{
+    border-radius: 0 !important;
+    border: none !important;
+}
+::placeholder
+{
+    color: #999 !important;
+}
+.follow
+{
+   background: #fff;
+    padding: 10px;
+    margin: 15px;
+    
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+/*-------footer------*/
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+margin-top:30px;
+}
+
+H8
+{        
+color: #444!important;
+}
+
+div.b {
+  text-align: justify; /* For Edge */
+  -moz-text-align-last: center; /* For Firefox prior 58.0 */
+  text-align-last: center;
+}
+
+
+@media screen and (max-width: 850px)
+{
+.icon
+{
+     font-size: 250%;
+    margin: 25%;
+    padding: 15px;
+    height: 90px;
+    width: 90px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: 34%;
+width: 100px;     
+}
+}
+@media screen and (max-width: 850px)
+{
+.img
+{
+width: 100px;  
+    
+}
+}
+@media screen and (max-width: 1635px)
+{
+#slider img
+{
+ width: 100%;    
+}
+} 
+
+
+
+
+
+
