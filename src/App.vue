@@ -1,28 +1,38 @@
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div class="page">
+  <select v-model="selected">
+    <option>option</option>
+    </select>
+<AppUserList >
+  <template #userlist="{list: users,remove}">
+  <AppCardView :list="users">
+  <template #secondrow="{ item: user}">
+<AppButton @click="remove(item)">{{user.name.first}}</AppButton>
+
+  </template>  
+  </AppCardView> 
+  </template>
+</AppUserList>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppUserList from "./components/AppUserList";
+import AppButton from "./components/AppButton";
+import AppCardView from "./components/AppCardView";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+
+export default{
+  data(){
+    return{
+      selected:"first"
+    }
+  },
+  components:{
+    AppUserList,
+   AppButton ,
+   AppCardView
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
